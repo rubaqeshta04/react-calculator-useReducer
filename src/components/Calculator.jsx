@@ -4,7 +4,7 @@ import resultReducer from "../reducers/resultReducer";
 export default function Calculator() {
   const [firstNumberInput, setFirstNumberInput] = useState("");
   const [secondNumberInput, setSecondNumberInput] = useState("");
-  const [result2, dispatch] = useReducer(resultReducer, 10);
+  const [result2, dispatch] = useReducer(resultReducer, 0);
 
   function handleSum() {
     dispatch({
